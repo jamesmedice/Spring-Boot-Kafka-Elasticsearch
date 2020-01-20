@@ -1,0 +1,13 @@
+server: 
+  port: 8002
+
+zookeeper:
+  host: ${ZOOKEEPER_SERVER:localhost}:2181
+
+kafka:
+  bootstrap-servers: ${KAFKA_SERVER:localhost}:9092
+  group: bridgestone
+  topic:
+    json:
+      stackHolder: stackHoldertopic
+      director: directortopic
