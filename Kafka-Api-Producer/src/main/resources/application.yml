@@ -1,14 +1,10 @@
 server: 
   port: 8006
 
-zookeeper:
-  host: ${ZOOKEEPER_SERVER:localhost}:2181
-
 kafka:
   tunnel:
     group: tunnelGroup
   bootstrap-servers: ${KAFKA_SERVER:localhost}:9092
   topic:
-    json:
-      company: companytopic
-      companyreply: companyreplytopic
+    producer: topic-pub
+    consumer: topic-sub

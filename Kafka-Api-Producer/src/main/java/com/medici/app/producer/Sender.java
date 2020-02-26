@@ -25,10 +25,10 @@ public class Sender implements BaseSender<Company> {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(Sender.class);
 
-	@Value("${kafka.topic.json.company}")
+	@Value("${kafka.topic.producer}")
 	private String jsonTopic;
 
-	@Value("${kafka.topic.json.companyreply}")
+	@Value("${kafka.topic.consumer}")
 	private String jsonTopicReply;
 
 	@Autowired

@@ -1,5 +1,7 @@
 package com.medici.app.model;
 
+import java.util.Date;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,4 +29,6 @@ public class Company implements KafkaPrimeModel {
 	private int countries;
 
 	private double marketvalue;
+	
+	private Date consumed;
 }

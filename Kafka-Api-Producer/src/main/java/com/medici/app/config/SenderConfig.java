@@ -36,7 +36,7 @@ public class SenderConfig {
 	@Value("${kafka.tunnel.group}")
 	private String tunnelGroup;
 
-	@Value("${kafka.topic.json.companyreply}")
+	@Value("${kafka.topic.consumer}")
 	private String jsonTopicReply;
 
 	@Bean
