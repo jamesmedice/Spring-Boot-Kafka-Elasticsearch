@@ -62,6 +62,8 @@
 		<module>KafkaConsumerProducer</module>
 		<module>KafkaProducer</module>
 		<module>Spring-Boot-Api-Kafka</module>
+	<module>kafka-reply-template-consumer</module>
+	<module>kafka-reply-template-producer</module>
 	</modules>
 
 
