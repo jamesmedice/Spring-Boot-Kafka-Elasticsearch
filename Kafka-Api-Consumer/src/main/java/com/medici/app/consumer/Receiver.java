@@ -1,5 +1,7 @@
 package com.medici.app.consumer;
 
+import java.util.Calendar;
+
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,12 +18,13 @@ public class Receiver implements BaseReceiver<String, Company> {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(Receiver.class);
 
-	@KafkaListener(topics = "${kafka.topic.json.company}")
-	@SendTo("companyreplytopic")
+	@KafkaListener(topics = "${kafka.topic.consumer}")
+	@SendTo("${kafka.topic.producer}")
 	@Override
 	public Company receive(ConsumerRecord<String, Company> record, @Header(KafkaHeaders.CORRELATION_ID) byte[] correlation) {
 		LOGGER.info(RECEIVED_KEY, record.key(), record.offset(), record.partition(), record.topic(), record.value().toString());
 		record.headers().add(KafkaHeaders.CORRELATION_ID, correlation);
+		record.value().setConsumed(Calendar.getInstance().getTime());
 		return record.value();
 	}
 

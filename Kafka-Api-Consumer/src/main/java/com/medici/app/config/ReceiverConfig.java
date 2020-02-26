@@ -32,7 +32,7 @@ public class ReceiverConfig {
 	@Value("${kafka.tunnel.group}")
 	private String tunnelGroup;
 
-	@Value("${kafka.topic.json.companyreply}")
+	@Value("${kafka.topic.producer}")
 	private String jsonTopicReply;
 
 	@Bean
