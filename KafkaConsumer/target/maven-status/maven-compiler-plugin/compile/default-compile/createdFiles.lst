@@ -1,0 +1,7 @@
+com\medici\app\kafka\consumer\BaseReceiver.class
+com\medici\app\config\AutoConfiguration.class
+com\medici\app\kafka\consumer\Receiver.class
+com\medici\app\kafka\model\KafkaPrimeModel.class
+com\medici\app\config\ReceiverConfig.class
+com\medici\app\ApplicationConsumer.class
+com\medici\app\kafka\model\Director.class

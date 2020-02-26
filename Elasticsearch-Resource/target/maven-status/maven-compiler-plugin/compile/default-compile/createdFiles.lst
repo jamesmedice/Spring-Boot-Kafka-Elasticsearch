@@ -1,0 +1,6 @@
+com\medici\app\config\SwaggerConfig.class
+com\medici\app\model\KafkaProducerLog.class
+com\medici\app\config\AutoConfiguration.class
+com\medici\app\repository\LoggerRepository.class
+com\medici\app\ApplicationElastic.class
+com\medici\app\service\ElasticsearchBrokerService.class
