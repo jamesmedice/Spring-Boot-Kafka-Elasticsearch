@@ -1,0 +1,8 @@
+com\medici\app\config\AutoConfiguration.class
+com\medici\app\ApplicationProducer.class
+com\medici\app\kafka\model\KafkaPrimeModel.class
+com\medici\app\kafka\model\StackHolder.class
+com\medici\app\config\SenderConfig.class
+com\medici\app\kafka\producer\Sender.class
+com\medici\app\runner\LookupRunnerService.class
+com\medici\app\kafka\producer\BaseSender.class
